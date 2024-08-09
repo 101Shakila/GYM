@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html,
 body {
     font-family: Roboto, sans-serif;
     margin: 0;
@@ -15,16 +16,19 @@ header {
     padding: 10px 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
+
 .logo img {
     width: 150px;
 }
 
-p{
+p {
     font-size: 18px;
     color: #666;
 
 }
-.Join-us a, .program-card a {
+
+.Join-us a,
+.program-card a {
     background: #e21b4a;
     padding: 10px;
     border-radius: 5px;
@@ -32,8 +36,8 @@ p{
     text-decoration: none;
 }
 
-.program-card a{
-    margin-top: 20px ;
+.program-card a {
+    margin-top: 20px;
 }
 
 .hero-text a {
@@ -48,11 +52,14 @@ nav ul {
     list-style-type: none;
     padding: 0;
 }
+
+
 nav ul li {
     display: inline-block;
-    margin-right: 20px;
 }
+
 nav ul li a {
+    margin: 0px;
     color: #252525;
     text-decoration: none;
     font-weight: 600;
@@ -61,7 +68,7 @@ nav ul li a {
 nav a {
     color: #333;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0px;
     font-size: 18px;
 }
 
@@ -77,6 +84,7 @@ nav a:hover {
 .container-wrapper {
     display: flex;
 }
+
 .container-wrapper img {
     width: 700px;
 }
@@ -87,15 +95,18 @@ nav a:hover {
     text-align: center;
     color: #000;
 }
+
 .hero img {
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
+
 .hero-text p {
     color: #ffff;
     margin-bottom: 30px;
 }
+
 .hero-text {
     position: absolute;
     top: 50%;
@@ -106,11 +117,17 @@ nav a:hover {
     padding: 30px;
     border-radius: 10px;
 }
+
 .text-content p {
     margin-bottom: 30px;
 }
+
 /* featured section css */
-.featured-programs, .latest-episodes .fitness-activities, .upcoming-releases, .reviews-ratings, .news-updates {
+.featured-programs,
+.latest-episodes .fitness-activities,
+.upcoming-releases,
+.reviews-ratings,
+.news-updates {
     margin: 60px 0;
 }
 
@@ -126,23 +143,30 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.text-content p{
-    margin-bottom: 10px;
-}
-.text-content {
-    padding: 0px 20px 30px;
-}
+
 .program-card img {
     width: 100%;
     height: 290px;
     object-fit: cover;
     border-radius: 5px;
 }
+
+.text-content p {
+    margin-bottom: 10px;
+}
+
+.text-content {
+    padding: 0px 20px 30px;
+}
+
+
+
 .program-card h3 {
     font-size: 24px;
     color: #E21B4A;
     margin-bottom: 0px;
 }
+
 .pricing {
     text-align: center;
     margin: 20px 0;
@@ -150,6 +174,7 @@ nav a:hover {
     background: #f8f8f8;
     padding: 20px 10px;
 }
+
 .pricing h2 {
     margin-bottom: 20px;
     font-size: 2em;
@@ -177,6 +202,7 @@ nav a:hover {
     font-size: 18px;
     color: #252525;
 }
+
 .price {
     font-size: 52px;
     color: #E21B4A;
@@ -186,10 +212,12 @@ nav a:hover {
     justify-content: center;
     align-items: baseline;
 }
+
 p.price sub {
     color: #252525;
     font-size: 18px;
 }
+
 .period {
     font-size: 1.2em;
     color: #626262;
@@ -207,9 +235,11 @@ p.price sub {
     list-style: auto;
     margin-left: 16px;
 }
+
 .pricing-plan:hover {
     transform: scale(1.05);
 }
+
 button.buy {
     border-radius: 5px;
     padding: 6px 50px;
@@ -218,6 +248,7 @@ button.buy {
     border: 1px solid transparent;
     color: #fff;
 }
+
 button.buy:hover {
     background: #fff;
     color: #E21B4A;
@@ -225,14 +256,15 @@ button.buy:hover {
     transition: 0.3s ease-in;
 }
 
-button.buy a{
+button.buy a {
     color: #fff;
     text-decoration: none;
-    
+
 }
-button.buy:hover a{
+
+button.buy:hover a {
     color: #E21B4A;
-    
+
 }
 
 /* top coaches */
@@ -240,6 +272,7 @@ button.buy:hover a{
     padding: 20px;
     margin: 20px 0;
     text-align: center;
+
 }
 
 .top-coaches h2 {
@@ -250,8 +283,8 @@ button.buy:hover a{
 
 .coaches-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
     justify-content: center;
 }
 
@@ -266,7 +299,7 @@ button.buy:hover a{
 
 .coach-card img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -292,6 +325,7 @@ button.buy:hover a{
     text-align: center;
     border-radius: 10px;
 }
+
 .contact-container {
     display: flex;
     justify-content: center;
@@ -324,7 +358,8 @@ button.buy:hover a{
     align-items: center;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -390,6 +425,7 @@ textarea {
     text-decoration: none;
     border-radius: 5px;
 }
+
 .activity-list a:hover {
     background-color: #ffff;
     color: #a43a56;
@@ -397,6 +433,7 @@ textarea {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     transition: 0.2s ease-in;
 }
+
 section h2 {
     text-align: center;
     font-size: 30px;
@@ -407,39 +444,51 @@ section h2 {
 .mt-30 {
     margin-top: 30px;
 }
+
 footer {
     background-color: #F3F3F3;
     color: #252525;
     text-align: center;
     padding: 40px 40px 10px;
 }
-.footer-content, .footer-logo, .store-hours {
+
+.footer-content,
+.footer-logo,
+.store-hours {
     margin-bottom: 30px;
 }
+
 .footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .footer-first {
     text-align: left;
 }
+
 footer p {
     color: #524f4f;
 }
+
 .store-hours {
     flex: 0 0 30%;
     text-align: left;
 }
+
 footer h3 {
     margin-bottom: 10px;
 }
+
 .store-hours p {
     padding: 10px 0px;
 }
+
 footer p {
     color: #524f4f;
 }
+
 .footer-copyright {
     display: flex;
     justify-content: space-between;
@@ -447,8 +496,9 @@ footer p {
     border-top: 1px solid #c6c5c5;
     padding-top: 20px;
 }
+
 footer nav ul li {
-    display: block!important;
+    display: block !important;
     margin-right: 0px;
     text-align: left;
     padding: 10px 0px;
@@ -472,90 +522,206 @@ header {
 }
 
 
-
 /* Media Queries for Tablet */
 @media (max-width: 1024px) {
-    nav a {
-        float: none;
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
     }
 
-    .anime-grid, .characters-grid {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .characters-grid {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .anime-card, .character-card {
+    .character-card {
         flex: 0 0 48%;
     }
 }
 
-
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
-    nav ul li {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+
+    nav li {
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 0px;
         display: block;
-        margin: 10px 0px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
     }
+
     header {
-        flex-wrap: wrap;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
+
     .hero {
-        position: inherit;
+        position: relative;
+        /* Ensure correct positioning */
     }
+
     .hero-text {
-        position: inherit;
-        transform: none;
         padding: 20px;
         font-size: 1.2em;
+        text-align: center;
     }
+
     .program-grid {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
+
     .program-card {
         flex: auto;
+        width: 100%;
+        /* Ensure cards take full width */
     }
+
     .pricing-plan {
-        width: auto;
+        width: 100%;
+        /* Ensure pricing plans take full width */
+        box-sizing: border-box;
     }
+
     .contact-container {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
+
     .contact-form {
-        flex: auto;
         max-width: 100%;
         margin: 0;
     }
+
     .top-coaches {
-        padding: 0px;
+        padding: 0;
     }
-    
+
     .genre-list a {
         margin: 5px 0;
     }
+
     .pricing-options {
         flex-direction: column;
         align-items: center;
     }
+
     .contact-us {
-        padding: 20px 0px;
+        padding: 20px 0;
     }
+
     .contact-image {
-        flex: auto;
+        max-width: 100%;
+        /* Ensure image scales correctly */
     }
+
     .store-hours {
-        flex: auto;
         text-align: left;
     }
+
     .footer-copyright {
-        flex-wrap: wrap;
         text-align: center;
         justify-content: center;
     }
-    .social-media{
+
+    .social-media {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+
+
+/* Services why us section */
+.why-us {
+    text-align: center;
+    padding: 2rem;
+}
+
+.why-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.why-us-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.5rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.why-us-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.why-us-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .why-us-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .why-us-content img {
+        order: -1;
     }
 }
