@@ -1,3 +1,55 @@
+/* THIS IS ALREADY IN STYLE.CSS */
+
+
+/* Services why us section */
+.why-us {
+    text-align: center;
+    padding: 2rem;
+}
+
+.why-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.why-us-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.5rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.why-us-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.why-us-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* I EDITED STYLE.CSS AND ADDED THIS BECAUASE WE ARE ONLY SUPPOSED TO HAVE 2 MEDIA QUERIES */
+@media (max-width: 768px) {
+    .why-us-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .why-us-content img {
+        order: -1;
+    }
+}
+
+
 /* Blog Form Styles */
 .blog-form {
     margin: 20px auto;
@@ -10,7 +62,7 @@
 
 .blog-form h2 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     text-align: center;
 }
 
@@ -29,6 +81,7 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
 }
 
 .blog-form textarea {
@@ -39,17 +92,18 @@
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #ff6600;
+    background-color: #E21B4A;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
     cursor: pointer;
     text-align: center;
+    transition: 1s;
 }
 
 .blog-form .submit-btn:hover {
-    background-color: #e65c00;
+    background-color: #cd1842;
 }
 
 /* Blog Posts Styles */
@@ -62,7 +116,7 @@
 .blog-posts h2 {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 28px;
+    font-size: clamp(1.75rem, 3.5vw, 2.25rem);
 }
 
 .blog-grid {
@@ -96,16 +150,19 @@
 
 .blog-card h3 {
     margin-top: 0;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
 }
 
 .blog-card p {
     color: #555;
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
 }
 
 .blog-card a {
-    color: #ff6600;
+    color: #E21B4A;
     text-decoration: none;
     font-weight: bold;
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
 }
 
 .blog-card a:hover {

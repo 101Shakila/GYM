@@ -680,6 +680,16 @@ header {
         justify-content: center;
         align-items: center;
     }
+
+
+    .why-us-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .why-us-content img {
+        order: -1;
+    }
 }
 
 
@@ -717,17 +727,6 @@ header {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-    .why-us-content {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-    }
-
-    .why-us-content img {
-        order: -1;
-    }
 }
 
 
@@ -773,7 +772,7 @@ header {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #a43a56;
+    background-color: #E21B4A;
     color: white;
     border: none;
     border-radius: 5px;
@@ -784,7 +783,7 @@ header {
 }
 
 .blog-form .submit-btn:hover {
-    background-color: #E21B4A;
+    background-color: #cd1842;
 }
 
 /* Blog Posts Styles */
